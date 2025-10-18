@@ -1,0 +1,6 @@
+Placeholder audio file: ambient_dark
+Duration: 30 seconds
+Sample rate: 44100 Hz
+Format: 16-bit PCM
+
+This is a placeholder file. Replace with actual audio content.
