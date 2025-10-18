@@ -523,24 +523,130 @@ class GameEngine:
             camera_effect="zoom"
         )
         
-        # Placeholder scenes 5-10 with enhanced metadata
-        for i in range(5, 11):
-            self.scenes[i] = Scene(
-                scene_id=i,
-                title=f"Scene {i}",
-                background=f"cutscene{i}.jpg",
-                dialogues=[
-                    Dialogue("Narrator", f"Scene {i} - Placeholder dialogue for future development.", 3.0)
-                ],
-                choices=[
-                    Choice(f"Choice 1 for scene {i}", MemoryType.KINDNESS, 5),
-                    Choice(f"Choice 2 for scene {i}", MemoryType.OBSESSION, 5),
-                    Choice(f"Choice 3 for scene {i}", MemoryType.TRUTH, 5),
-                    Choice(f"Choice 4 for scene {i}", MemoryType.TRUST, 5)
-                ],
-                audio_track="audio1.mp3",
-                lighting="normal"
-            )
+        # Scene 5 - The Broken Path
+        self.scenes[5] = Scene(
+            scene_id=5,
+            title="The Broken Path",
+            background="cutscene5.jpg",
+            dialogues=[
+                Dialogue("Narrator", "A fork in the road leads to different futures, each more uncertain than the last.", 4.0),
+                Dialogue("Rika", "Which path holds the truth?", 2.0, emotion="uncertain")
+            ],
+            choices=[
+                Choice("Take the left path.", MemoryType.KINDNESS, 5, consequence_text="The path feels warm and inviting."),
+                Choice("Take the right path.", MemoryType.OBSESSION, 5, consequence_text="The path calls to your determination."),
+                Choice("Study both paths carefully.", MemoryType.TRUTH, 5, consequence_text="You notice subtle differences in the terrain."),
+                Choice("Ask Penci for guidance.", MemoryType.TRUST, 5, consequence_text="Penci shares ancient wisdom about the paths.")
+            ],
+            audio_track="audio1.mp3",
+            ambient_sound="wind_ruins.mp3",
+            lighting="dim",
+            weather_effect="ash"
+        )
+        
+        # Scene 6 - Whispers in the Dark
+        self.scenes[6] = Scene(
+            scene_id=6,
+            title="Whispers in the Dark",
+            background="cutscene6.jpg",
+            dialogues=[
+                Dialogue("Narrator", "Voices from the past echo through the ruins, calling her name.", 4.0),
+                Dialogue("Voice", "Rika... remember who you were...", 3.0, emotion="mysterious")
+            ],
+            choices=[
+                Choice("Answer the voices.", MemoryType.KINDNESS, 5, consequence_text="The voices respond with warmth."),
+                Choice("Ignore the voices and press on.", MemoryType.OBSESSION, 5, consequence_text="You focus on your mission."),
+                Choice("Try to understand what they're saying.", MemoryType.TRUTH, 5, consequence_text="The voices reveal fragments of truth."),
+                Choice("Stay close to Penci.", MemoryType.TRUST, 5, consequence_text="Penci helps you resist the voices.")
+            ],
+            audio_track="audio2.mp3",
+            ambient_sound="machine_hum.mp3",
+            lighting="eerie",
+            camera_effect="shake"
+        )
+        
+        # Scene 7 - The Tower of Truth
+        self.scenes[7] = Scene(
+            scene_id=7,
+            title="The Tower of Truth",
+            background="cutscene7.jpg",
+            dialogues=[
+                Dialogue("Narrator", "A towering structure pierces the sky, its purpose lost to time.", 4.0),
+                Dialogue("Rika", "This must be where the answers lie.", 2.0, emotion="determined")
+            ],
+            choices=[
+                Choice("Approach the tower cautiously.", MemoryType.KINDNESS, 5, consequence_text="You move with care and respect."),
+                Choice("Charge toward the tower.", MemoryType.OBSESSION, 5, consequence_text="You rush forward with single-minded purpose."),
+                Choice("Examine the tower's architecture.", MemoryType.TRUTH, 5, consequence_text="You discover ancient symbols and patterns."),
+                Choice("Wait for Penci to catch up.", MemoryType.TRUST, 5, consequence_text="Together you approach the tower.")
+            ],
+            audio_track="audio3.mp3",
+            ambient_sound="footsteps.mp3",
+            lighting="normal"
+        )
+        
+        # Scene 8 - The Final Choice
+        self.scenes[8] = Scene(
+            scene_id=8,
+            title="The Final Choice",
+            background="cutscene8.jpg",
+            dialogues=[
+                Dialogue("Narrator", "The path ahead splits into four directions, each representing a different truth.", 4.0),
+                Dialogue("Rika", "This is it... the moment that will define everything.", 3.0, emotion="resolved")
+            ],
+            choices=[
+                Choice("Choose the path of compassion.", MemoryType.KINDNESS, 10, consequence_text="You embrace kindness as your guiding light."),
+                Choice("Choose the path of determination.", MemoryType.OBSESSION, 10, consequence_text="You commit to your unwavering purpose."),
+                Choice("Choose the path of knowledge.", MemoryType.TRUTH, 10, consequence_text="You seek the ultimate truth above all else."),
+                Choice("Choose the path of unity.", MemoryType.TRUST, 10, consequence_text="You trust in the power of togetherness.")
+            ],
+            audio_track="audio4.mp3",
+            ambient_sound="glass_chimes.mp3",
+            lighting="bright",
+            camera_effect="zoom"
+        )
+        
+        # Scene 9 - The Creator's Chamber
+        self.scenes[9] = Scene(
+            scene_id=9,
+            title="The Creator's Chamber",
+            background="cutscene9.jpg",
+            dialogues=[
+                Dialogue("Narrator", "Deep within the ruins lies a chamber that holds the answers she seeks.", 4.0),
+                Dialogue("Creator", "Welcome, Rika. You have come far.", 3.0, emotion="wise")
+            ],
+            choices=[
+                Choice("Ask about the world's destruction.", MemoryType.KINDNESS, 5, consequence_text="The Creator speaks of hope and renewal."),
+                Choice("Demand answers about your past.", MemoryType.OBSESSION, 5, consequence_text="The Creator reveals your true purpose."),
+                Choice("Seek the ultimate truth.", MemoryType.TRUTH, 5, consequence_text="The Creator shows you the cosmic truth."),
+                Choice("Trust in the Creator's wisdom.", MemoryType.TRUST, 5, consequence_text="The Creator guides you to understanding.")
+            ],
+            audio_track="audio1.mp3",
+            ambient_sound="wind_ruins.mp3",
+            lighting="eerie",
+            weather_effect="ash"
+        )
+        
+        # Scene 10 - Into the Light
+        self.scenes[10] = Scene(
+            scene_id=10,
+            title="Into the Light",
+            background="cutscene10.jpg",
+            dialogues=[
+                Dialogue("Narrator", "The journey ends where it began, but everything has changed.", 4.0),
+                Dialogue("Rika", "I understand now... the truth was always within me.", 3.0, emotion="peaceful")
+            ],
+            choices=[
+                Choice("Embrace your new understanding.", MemoryType.KINDNESS, 5, consequence_text="You feel a deep sense of peace."),
+                Choice("Commit to your chosen path.", MemoryType.OBSESSION, 5, consequence_text="You are resolved in your purpose."),
+                Choice("Share the truth with others.", MemoryType.TRUTH, 5, consequence_text="You become a beacon of knowledge."),
+                Choice("Build a new world together.", MemoryType.TRUST, 5, consequence_text="You and Penci create something beautiful.")
+            ],
+            audio_track="audio2.mp3",
+            ambient_sound="machine_hum.mp3",
+            lighting="bright",
+            weather_effect="light"
+        )
     
     def get_current_scene(self) -> Optional[Scene]:
         """Get the current scene"""
@@ -576,6 +682,10 @@ class GameEngine:
             # Default progression
             if self.progress.current_scene < len(self.scenes):
                 self.progress.current_scene += 1
+            else:
+                # Game completed
+                self.progress.current_scene = 1  # Loop back to start
+                self._handle_game_completion()
         
         # Update play time
         self.progress.play_time = time.time() - self.start_time
@@ -584,6 +694,27 @@ class GameEngine:
         self.save_manager.save_game(self.progress)
         
         return True, choice.consequence_text or f"Choice made: {choice.text}"
+    
+    def _handle_game_completion(self):
+        """Handle game completion"""
+        logger.info("Game completed! Calculating final results...")
+        
+        # Calculate final alignment
+        final_alignment = self.memory_analytics.get_current_alignment(self.progress.memory_values)
+        
+        # Add completion achievement
+        achievement = f"Completed the journey as {final_alignment}"
+        if achievement not in self.progress.achievements:
+            self.progress.achievements.append(achievement)
+        
+        # Log completion stats
+        logger.info(f"Final alignment: {final_alignment}")
+        logger.info(f"Total choices made: {len(self.progress.choices_made)}")
+        logger.info(f"Play time: {self.progress.play_time:.1f} seconds")
+        logger.info(f"Scenes watched: {len(self.progress.watched_cutscenes)}")
+        
+        # Save completion data
+        self.save_manager.save_game(self.progress, 0)  # Save to slot 0 as completion save
     
     def get_memory_data(self) -> Dict[str, Any]:
         """Get comprehensive memory data"""
