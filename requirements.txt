@@ -1,39 +1,4 @@
-# Into the Dark - Python Dependencies
-# Core game engine requirements
-
-# Image processing for cutscene generation
+# Into the Dark - Game Requirements
+PyQt6>=6.4.0
 Pillow>=9.0.0
-
-# Audio processing (optional, for advanced audio features)
-numpy>=1.21.0
-scipy>=1.7.0
-
-# Audio library for game sounds
 pygame>=2.1.0
-
-# JSON handling (built-in, but listed for clarity)
-# json - built-in module
-
-# Path handling (built-in, but listed for clarity)  
-# pathlib - built-in module
-
-# Threading (built-in, but listed for clarity)
-# threading - built-in module
-
-# Logging (built-in, but listed for clarity)
-# logging - built-in module
-
-# Dataclasses (built-in in Python 3.7+)
-# dataclasses - built-in module
-
-# Enums (built-in in Python 3.4+)
-# enum - built-in module
-
-# Time handling (built-in, but listed for clarity)
-# time - built-in module
-
-# System interface (built-in, but listed for clarity)
-# sys - built-in module
-
-# Operating system interface (built-in, but listed for clarity)
-# os - built-in module
