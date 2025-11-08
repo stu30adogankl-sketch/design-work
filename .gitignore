@@ -27,6 +27,9 @@ MANIFEST
 # PyInstaller
 *.manifest
 *.spec
+*.exe
+*.AppImage
+AppDir/
 
 # Installer logs
 pip-log.txt
@@ -83,12 +86,6 @@ cmake-build-*/
 *.tmp
 *.temp
 test_config.json
-
-# Audio files (if large)
-# Uncomment if you want to exclude audio files
-# *.mp3
-# *.wav
-# *.ogg
 
 # Keep important files
 !assets/

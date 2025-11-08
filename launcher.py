@@ -23,7 +23,7 @@ def main():
     
     # Launch the game
     try:
-        subprocess.run([sys.executable, "pyqt6_game.py"], check=True)
+        subprocess.run(["python3", "pyqt6_game.py"], check=True)
     except subprocess.CalledProcessError:
         print("✗ Failed to launch game")
         sys.exit(1)
